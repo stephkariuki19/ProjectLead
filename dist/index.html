@@ -9,15 +9,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
    <link rel="stylesheet" href="./styles.css">
-    <title>DO-IT</title>
+    <title>PROJECTLEAD</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+    
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <svg  class="divider"xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#e4ddfe" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-align-justify"><line x1="21" y1="10" x2="3" y2="10"></line><line x1="21" y1="6" x2="3" y2="6"></line><line x1="21" y1="14" x2="3" y2="14"></line><line x1="21" y1="18" x2="3" y2="18"></line></svg>
-            <h1 class="project-title">Taskmaster</h1>
-
-            <div class="priorities">
+            
+            <h1 class="project-title">ProjectLead</h1>
+           <div class="priorities">
                 <div class="red"></div>
                 <h3 class="color">Urgent</h3>
                 <div class="green"></div>
@@ -32,104 +37,66 @@
 
     <div class="project">
         <div class="project-tile-input">
-            <form >
+
+            <form id="project-name-form">
                 <input type="text" name="project-input" id="project-input" placeholder="enter project">
             <button class="project-submit-btn">SUBMIT</button>
             <button class="project-cancel-btn2">CANCEL</button>
             </form>
             
         </div>
-            <div class="project-tile">
-                <h3 class="name">Project 1</h3>
-                <svg  class="dots"xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#e4ddfe" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical"><circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle></svg>
+            <div class="list-of-projects" data-lists>
+                <!--
+                    shows added projets with dots for editi
+                <div class="project-tile">
+                    <h3 class="name">Project 1</h3>
+                    <svg  class="dots"xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#e4ddfe" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical"><circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle></svg>
+                </div>
+    
+                <div class="project-tile">
+                    <h3 class="name">Project 1</h3>
+                    <svg  class="dots"xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#e4ddfe" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical"><circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle></svg>
+                </div>
+                       -->
+            
             </div>
-
+    </div>
+             <!--place to allow pop up for deletion/editing, on clicking edit, second div to appear-->
  
-        </div>
-            <!--- popup,input + buttons will be added on click but will be part of project
-            <div class="popup">
-                <h4 class="edit">Edit</h4>
-                <h4 class="delete">Delete</h4>
-            </div>
-            might have to delete ------
-        <div class="edit-pane">
-            <input type="text">
-            <div class="edit-buttons">
-                <button class="project-edit-btn">Edit</button>
-                <button class="project-cancel-btn">Cancel</button>
-            </div>
-        </div>
-                        
-        -->
 
-
+            <!--
+             <div class="edit-pane">
+                <input type="text">
+                <div class="edit-buttons">
+                    <button class="project-edit-btn">Save</button>
+                    <button class="project-cancel-btn">Cancel</button>
+                </div>
+            </div>-->
+            
+       
         
-        <button class="add-project">
-            <svg class="project-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
-        </button>
+
+
+
     </div>
 
     <div class="content">
         <div class="current-project-banner">
-            <h1 class="title-banner">Project 1</h1>
-        </div>
-        <div class="task">
+            <div class="project-title-banner">
+                <h1 class="title-banner">Project 1</h1>
+            </div>
             
-            <div class="task-details">
-                <input type="checkbox" class="check-box" value="complete" name="complete">
-                <p class="task-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. dolore beatae cumque voluptatibus.</p>
-                <svg class="delete-bin" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#110050" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
-                <svg class="edit-pencil" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#110050" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-3"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg>
-            </div>
-            <div class="prio-time">
-                <h5 class="pane-time">Due date: 10/28/2020</h5>
-                <div class="pane-priority"></div>
-            </div>
+         
+        </div>
+<!--THE ADD TASK FORM-->
 
-            </div>
-<!--a checked task-->
-<div class="task">
-            
-    <div class="task-details">
-        <input type="checkbox" class="check-box checked" value="complete" name="complete">
-        <p class="task-description complete">Lorem ipsum dolor sit amet consectetur adipisicing elit. dolore beatae cumque voluptatibus.</p>
-        <svg class="delete-bin" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#110050" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
-        <svg class="edit-pencil" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#110050" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-3"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg>
-    </div>
-    <div class="prio-time">
-        <h5 class="pane-time">Due date: 10/28/2020</h5>
-        <div class="pane-priority"></div>
+<div class="add-taskarea"> </div>
+<div class="form-content"></div>
+<div class="tasks-area"></div>
     </div>
 
-    </div>
-
-    <form class="form" >
-        <div class="desc">
-            <label class="task-text-label" for="task-text">Task</label>
-            <input type="text" name="task-text" id="task-text" placeholder="type in task">
-        </div>
-        <div class="date">
-            <label for="task-date">Due Date</label>
-            <input type="date" name="task-date" id="task-date">
-        </div>
-        <div class="form-priority">
-         <input class="radio " type="radio" name="urgent-priority" id="urgent-priority">
-            <label for="task-form-priority">Urgent</label>
-            <input class="radio" type="radio" name="mild-priority" id="mild-priority">
-            <label for="task-form-priority">Mild</label>
-            <input class="radio" type="radio" name="low-priority" id="low-priority">
-            <label for="task-form-priority">Not Urgent</label>
-           </div>
-           <div class="form-btns">
-           <button class="form-submit-btn">SUBMIT</button>
-           <button class="form-cancel-btn">CANCEL</button>
-        </div>
-    </form>
-        <button class="add-task">
-            <svg  class="task-plus"xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#110050" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus-circle"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
-        </button>
-    </div>
    </main>
+
 </body>
 <script src="./main.js"></script>
 </html>

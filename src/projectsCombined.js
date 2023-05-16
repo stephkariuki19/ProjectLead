@@ -1,6 +1,6 @@
 import Project from "./project"
-import Task from "./task"
-export default class Planner{
+import Task from "./task"//deals with  array of projects might delete later
+export default class projectsCombined{
     constructor(){
         this.projects = []
     }

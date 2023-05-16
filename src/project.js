@@ -10,7 +10,7 @@ export default class Project{
     getProjectName(){
         return this.name
     }
-    setTasks(tasks){
+    setTasks(tasks){//might overwrite the array to become the argument
         this.tasks = tasks
     }
     getTasks(){
@@ -21,6 +21,5 @@ export default class Project{
     }
     deleteTask(index){//can put taskname instead and exclude it
         this.tasks.splice(index,1)
-
     }
 }
